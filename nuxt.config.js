@@ -16,6 +16,20 @@ export default {
     ]
   },
 
+  modules: [
+    '@nuxtjs/helmet',
+  ],
+
+  helmet: {
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", "'unsafe-inline'"],
+      },
+    },
+  },
+  
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
