@@ -1,0 +1,2 @@
+# myProject
+Nuxt project
